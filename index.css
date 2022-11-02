@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+	line-height: 1;
+    padding: 100px 0;
+    background: burlywood;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+.conteiner {
+    width: 1000px;
+    min-height: 800px;
+    border: 5px solid white;
+    margin: 0 auto;
+    background: white;
+}
+
+.header{
+    display: flex;
+    height: 200px;
+    
+}
+
+.title-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px ;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    color: white;
+    opacity: 0.8;
+    /* margin-right: 10px; */
+    background: url(https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80) no-repeat center center / cover;
+}
+
+.title-block::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.title{
+    position: relative;
+    z-index: 2;
+}
+
+.userpicture{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background: rgb(255, 238, 238) no-repeat center center;
+}
+
+
+.nav ul{
+    display: flex;
+    background: rgb(106, 70, 70);
+    justify-content: center;
+}
+
+
+
+.nav li a {
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    color: rgb(20, 166, 66);
+    font-weight: bold;
+    border-right: 1px solid gray;
+    transition: background 1s ease;
+
+}
+
+
+.nav li a:hover{
+    background: wheat;
+}
+
+.content-wrapper{
+    display: flex;
+
+}
+
+.content{
+    width: 70%;
+    padding: 20px;
+}
+
+.content h3{
+    text-align: center;
+}
+
+.sidebar{
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}   
+
+.skills li{
+    padding: 10px 0;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.skills ul{
+    display: flex;
+    background: rgb(106, 70, 70);
+}
+
+
+
+
+.skills li:hover{
+    transform: translateX(10px);
+}
